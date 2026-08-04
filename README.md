@@ -2,7 +2,7 @@
 
 An Android application that combines **real-time object detection** using TensorFlow Lite with **Gemini AI image analysis** and **text-to-speech** capabilities. The app provides audio feedback for detected objects and allows users to capture photos for detailed AI-powered image description.
 
-## 🚀 Features
+## Features
 
 ### Real-Time Object Detection
 - **Live object detection** using TensorFlow Lite models (MobileNetV1, EfficientDet)
@@ -30,7 +30,7 @@ An Android application that combines **real-time object detection** using Tensor
 - Dynamic bounding box display
 - Bottom sheet configuration panel for settings adjustment
 
-## 📋 Requirements
+## Requirements
 
 ### Android Requirements
 - **Minimum API Level:** 21 (Android 5.0 Lollipop)
