@@ -46,10 +46,3 @@ An Android application that combines **real-time object detection** using Tensor
 - Google Generative AI (Gemini)
 - Material Design Components
 
-## 🛠️ Setup Instructions
-
-### 1. Clone the Repository
-```bash
-git clone https://github.com/yourusername/tensorflow-lite-object-detection.git
-cd tensorflow-lite-object-detection
-```
