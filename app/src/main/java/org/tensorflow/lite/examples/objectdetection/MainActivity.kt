@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
         // Configurar o modelo Gemini
         generativeModel = GenerativeModel(
-            modelName = "gemini-1.5-flash",
+            modelName = "gemini-flash-latest",
             apiKey = BuildConfig.API_KEY
         )
 
