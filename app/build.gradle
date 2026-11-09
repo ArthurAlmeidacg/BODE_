@@ -47,6 +47,18 @@ android {
         versionName "1.0.0"
     }
 
+    // Keystore de debug compartilhado pelo time (arquivo versionado no git em app/debug.keystore),
+    // assim todo mundo assina os builds de debug com a mesma chave e evita
+    // INSTALL_FAILED_UPDATE_INCOMPATIBLE ao trocar de máquina ou puxar o projeto de novo.
+    signingConfigs {
+        debug {
+            storeFile file("debug.keystore")
+            storePassword "android"
+            keyAlias "androiddebugkey"
+            keyPassword "android"
+        }
+    }
+
     dataBinding {
         enabled = true
     }
@@ -62,6 +74,11 @@ android {
 
     buildTypes {
         debug {
+            // Sufixo no pacote + nome diferente no launcher, só pra essa build de debug
+            // poder ficar instalada ao lado da versão que já está no celular.
+            applicationIdSuffix ".dev"
+            resValue "string", "app_name", "BODE Dev"
+            signingConfig signingConfigs.debug
             buildConfigField "String", "API_KEY", "\"${apiKey}\""
         }
         release {
@@ -157,5 +174,5 @@ dependencies {
     implementation 'org.tensorflow:tensorflow-lite-gpu:2.9.0'
 
     //gemini
-    implementation("com.google.ai.client.generativeai:generativeai:0.9.0")
+    //implementation("com.google.ai.client.generativeai:generativeai:0.9.0")
 }

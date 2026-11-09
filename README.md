@@ -5,7 +5,7 @@ An Android application that combines **real-time object detection** using Tensor
 ## Features
 
 ### Real-Time Object Detection
-- **Live object detection** using TensorFlow Lite models (MobileNetV1, EfficientDet)
+- **Live object detection** using TensorFlow Lite model EfficientDet
 - **Bounding box visualization** for detected objects
 - **Configurable confidence threshold** for detection accuracy
 - Support for multiple hardware accelerators (CPU, GPU, NNAPI)

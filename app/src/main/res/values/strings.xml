@@ -16,7 +16,7 @@
 -->
 <resources>
 
-    <string name="app_name">TFLite Object Detection</string>
+    <string name="app_name">BODE</string>
     <string name="label_fps">Frames per Second</string>
 
 </resources>
